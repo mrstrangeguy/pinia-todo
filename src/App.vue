@@ -12,7 +12,7 @@
     <input type="text" class="add-input" placeholder="New Todo" v-model="todoStore.currentValue">
   </div>
   <div>
-    <button @click="todoStore.addTodo">OK</button>
+    <button @click="todoStore.addTodo">Add</button>
   </div>
   </div>
   <button @click="todoStore.toggleTodo" class="add-todo">Add Todo</button>
