@@ -6,6 +6,11 @@ export const useTodoStore = defineStore('todoStore',{
     currentDisplay:false,
     currentValue:''
    }),
+   getters:{
+      getValues(){
+         return this.todos.map((elem) => elem.value)
+      }
+   },
    actions:{
       addTodo(){
       if(this.currentValue !== ""){
@@ -30,7 +35,7 @@ export const useTodoStore = defineStore('todoStore',{
       deleteTodo(id){
        
          const findedIndex = this.todos.findIndex((elem) => elem.id === id)
-         console.log("Finded Index = "+findedIndex)
+       
          this.todos.splice(findedIndex,1)
 
       } 
