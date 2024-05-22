@@ -1,11 +1,11 @@
-export interface TodoItem {
+export interface TodoItemType {
    value:string,
    isChecked:boolean,
    id:number
 }
 
 export interface State {
-    todos:TodoItem[],
+    todos:TodoItemType[],
     currentDisplay:boolean,
     currentValue:string
 }

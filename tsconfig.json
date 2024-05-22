@@ -38,6 +38,7 @@
     "tests/**/*.ts",
     "tests/**/*.tsx",
     "src/**/*.js",
+    // "src/components/TodoItem.vue"
  ],
   "exclude": [
     "node_modules"
