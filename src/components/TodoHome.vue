@@ -2,7 +2,7 @@
     <div class="todo-wrapper">
     <div class="todo-container">
    <div>
-    <button><router-link to="/tasks">View All Tasks</router-link></button>
+    <button><router-link to="/tasks">All Tasks</router-link></button>
    </div>
    <div class="todos">
     <TodoItem v-for="(todo,index) in todoArray"  :id="todo.id" :key="index" :value="todo.value" :checked="todo.isChecked"/>
